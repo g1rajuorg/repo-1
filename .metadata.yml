@@ -1,0 +1,24 @@
+metadata:
+  name: rtb-bidder
+  description: "Next generation RTB Bidder service which serves O&O (TV Native) traffic"
+  labels:
+    stack: "golang"
+    practice: "engineering"
+    jira-project: "PEDSP"
+    jira-board: 2844
+    tier: "1"
+    public: true
+    sensitive: false
+  links:
+    - url: https://adgear.atlassian.net/wiki/spaces/ENG/pages/19671385422/Greenfield+Neo+-+AdServer
+      title: "Greenfield/Neo - AdServer"
+
+spec:
+  owner: cg-dsp-bidding-systems
+  type: service
+  lifecycle: production
+
+monitoring:
+  golden-signals:
+    url: https://grafana.int.adgear.com/d/0JYSf334k/1-0-rtb-bidder-golden-signals?orgId=1
+    title: '1.0 RTB Bidder Golden Signals'
